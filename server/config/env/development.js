@@ -3,7 +3,7 @@ export default {
         connection_string : 'mongodb://douglas:isabelle@ds057816.mlab.com:57816/controle-financeiro'
     },
     logging: {
-        format: 'tiny',
+        format: 'dev',
         options: {}
     },   
     mailer: {
@@ -14,4 +14,4 @@ export default {
             pass: 'PASSWORD'
         }
     },
-}
+};
