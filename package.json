@@ -8,7 +8,10 @@
     "sourceMaps": "inline"
   },
   "scripts": {
-    "start": "node --require babel-register server.js"
+    //"start": "node --require babel-register server.js",
+    "test": "mocha --opts test/unit/mocha.opts test/unit/*.js",
+    "start": "babel-node server.js",
+    "test-integration" : "mocha --opts test/integration/mocha.opts test/integration/*.js"
   },
   "author": "Douglas Everton de Oliveira",
   "license": "ISC",
