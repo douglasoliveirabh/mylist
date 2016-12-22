@@ -1,9 +1,11 @@
 import express from 'express';
-import users from './users';
+import users from '../controllers/users';
 
-const router = express.Router();
+export default (app) => {
 
-router.use('/users', users)
+    const router = express.Router();
 
+    router.use('/users', users(app));
 
-export default router;
+    return router;
+};

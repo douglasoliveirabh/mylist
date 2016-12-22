@@ -1,7 +1,8 @@
-import app from './server/app'
+import app from './server/app';
+import config from './server/config/env/global';
 
-const port = 3000;
+global.app = app;
 
-app.listen(port, function(){
-    console.log(`Application listening on port: ${port}`);
+app.listen(config.port, function(){
+    console.log(`Application listening on port: ${config.port}`);
 });
